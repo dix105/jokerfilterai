@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokerfilterai | The Ultimate AI Clown Filter for Hilarious Photo Edits</title>
+    <meta name="description" content="Turn yourself into a classic circus clown or a creepy Joker with our free AI clown filter. Get realistic, high-quality results online in just seconds.">
+    <meta name="keywords" content="AI clown filter, joker face filter, funny photo editor, clown makeup app, circus filter, AI photo effects, face transformation, free online photo editor, digital face paint, funny face generator">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jokerfilterai | The Ultimate AI Clown Filter">
+    <meta property="og:description" content="Turn yourself into a classic circus clown or a creepy Joker with our free AI clown filter.">
+    <meta property="og:image" content="images/hero-bg.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jokerfilterai">
+    <meta name="twitter:description" content="Turn yourself into a classic circus clown or a creepy Joker with our free AI clown filter.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Titan+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Jokerfilterai</div>
+        <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#how-to-use">How It Works</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#faq">FAQ</a>
+            <a href="#playground" class="btn btn-nav mobile-only">Try Now</a>
+        </nav>
+        <a href="#playground" class="btn btn-nav desktop-only">Try Now</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg-image">
+                <img src="images/hero-bg.jpg" alt="Abstract Frutiger Aero background with liquid metal gradients">
+            </div>
+            <div class="hero-bg-animation">
+                <!-- Confetti/Particle Animation injected via CSS/JS -->
+            </div>
+            
+            <div class="hero-content fade-in-up">
+                <h1>The Ultimate AI Clown Filter for Hilarious Photo Edits</h1>
+                <p>Looking for a funny photo edit? Our AI clown filter adds hilarious face paint, a red nose, and wild hair to your pictures. Try it now for free!</p>
+                <a href="#playground" class="shiny-button">Clownify Me!</a>
+            </div>
+        </section>
+
+        <!-- Playground Section -->
+        <section id="playground">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Effect Lab</h2>
+                    <p>Upload your photo and watch the magic happen!</p>
+                </div>
+                
+                <div class="playground-grid">
+                    <!-- Left: Upload Zone -->
+                    <div class="control-panel">
+                        <div id="upload-zone" class="upload-zone">
+                            <input type="file" id="file-input" accept="image/*" hidden>
+                            <div class="upload-content">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="upload-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                <p>Drag & Drop or Click to Upload</p>
+                            </div>
+                            <img id="preview-image" class="preview-image hidden" alt="Upload preview">
+                        </div>
+                        <div class="actions">
+                            <button id="reset-btn" class="btn btn-secondary" disabled>Reset</button>
+                            <button id="generate-btn" class="shiny-button full-width" disabled>Clownify Me!</button>
+                        </div>
+                    </div>
+
+                    <!-- Right: Result Display -->
+                    <div class="result-panel">
+                        <div id="result-container" class="result-display">
+                            <div id="result-placeholder" class="result-placeholder-content">
+                                <p>Result will appear here</p>
+                            </div>
+                            <div id="loading-state" class="loading-state hidden">
+                                <div class="spinner"></div>
+                                <p>Applying clown makeup...</p>
+                            </div>
+                            <img id="result-final" class="hidden" alt="AI Generated Clown Result">
+                        </div>
+                        <button id="download-btn" class="btn btn-outline full-width" disabled>Download Image</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-to-use">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                    <p>Get your clown face in three simple steps</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card wobble-card">
+                        <div class="step-number">1</div>
+                        <h3>Upload Photo</h3>
+                        <p>Select a clear, well-lit portrait photo where the face is clearly visible and facing the camera.</p>
+                    </div>
+                    <div class="step-card wobble-card">
+                        <div class="step-number">2</div>
+                        <h3>AI Processing</h3>
+                        <p>Our AI automatically detects facial features and applies realistic clown makeup and accessories.</p>
+                    </div>
+                    <div class="step-card wobble-card">
+                        <div class="step-number">3</div>
+                        <h3>Download</h3>
+                        <p>Preview your hilarious transformation and download the high-quality image to share with friends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Gallery</h2>
+                    <p>Check out these hilarious transformations</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/gallery-result-1.jpg" alt="Portrait of a laughing man transformed into a colorful circus clown">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-result-2.jpg" alt="Portrait of a woman wearing a jester hat with clown makeup">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-result-3.jpg" alt="Golden retriever dog wearing a clown ruff and hat">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Users Say</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="quote">"I couldn't stop laughing! The makeup looks so realistic but totally ridiculous at the same time."</p>
+                        <div class="author">
+                            <span class="name">Jamie L.</span>
+                            <span class="role">Content Creator</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"Used this for a prank on my brother. The AI nailed the nose placement perfectly."</p>
+                        <div class="author">
+                            <span class="name">Marcus T.</span>
+                            <span class="role">Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">What is the AI Clown Filter?</button>
+                        <div class="faq-answer"><p>The AI Clown Filter is a fun image effect powered by artificial intelligence. It automatically detects a face in your uploaded photo and applies a realistic and amusing clown-themed transformation, complete with digital makeup, a red nose, and other classic clown features.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How much time does it take to apply the filter?</button>
+                        <div class="faq-answer"><p>Processing time can vary slightly depending on the complexity and resolution of your image. However, our system is optimized for speed, and in most cases, you will receive your transformed image in just a few seconds—significantly faster than most other online tools.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Is it free to use the AI Clown Filter?</button>
+                        <div class="faq-answer"><p>Yes, it is! To get started, simply sign up for a free account on our website. Upon registration, we will provide you with a set of free credits that you can use to try out the AI Clown Filter and other creative tools on our platform.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Are my uploaded photos safe and private?</button>
+                        <div class="faq-answer"><p>Absolutely. We prioritize your privacy and security. Your images are uploaded over a secure connection, used solely for the purpose of applying the filter, and are automatically deleted from our servers after a short period. We never share your data with third parties.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What kind of photos work best with the clown filter?</button>
+                        <div class="faq-answer"><p>For the best results, we recommend using a clear, well-lit portrait photo where the face is clearly visible and facing the camera. High-resolution images will produce a more detailed and convincing effect. The tool works best with a single subject.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What image file formats do you support?</button>
+                        <div class="faq-answer"><p>Our tool supports all major image formats, including JPEG, PNG, and WEBP. Just choose your favorite photo and upload it directly to our platform without worrying about conversions.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can I share the clown images I create?</button>
+                        <div class="faq-answer"><p>Of course! Once your image is generated, you can easily download it to your device. Feel free to share your fun creations with friends and family on social media platforms like Instagram, Facebook, and Twitter.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do I need to install any software to use this tool?</button>
+                        <div class="faq-answer"><p>No installation is necessary. The AI Clown Filter is a fully browser-based tool. You can access and use it from any modern web browser on your computer, tablet, or smartphone without downloading any apps.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Jokerfilterai</h3>
+                    <p>The funniest AI photo editor on the web.</p>
+                </div>
+                <div class="footer-links">
+                    <button data-modal-target="privacy">Privacy Policy</button>
+                    <button data-modal-target="terms">Terms of Service</button>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Jokerfilterai. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="privacy-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" data-modal-close="privacy">&times;</span>
+            <div class="modal-body">
+                <h2>Privacy Policy</h2>
+                <p><strong>Last Updated:</strong> 2023</p>
+                <h4>1. Data Collection</h4>
+                <p>We collect only the minimum data necessary:</p>
+                <ul>
+                    <li>Images you upload for processing (temporarily stored)</li>
+                    <li>Basic usage analytics (non-personal)</li>
+                    <li>Browser type and device information</li>
+                </ul>
+                <h4>2. Image Processing</h4>
+                <p>Your uploaded images are:</p>
+                <ul>
+                    <li>Processed securely on our servers</li>
+                    <li>Automatically deleted within 24 hours</li>
+                    <li>Never shared with third parties</li>
+                    <li>Not used for AI training without consent</li>
+                </ul>
+                <h4>3. Data Security</h4>
+                <p>All data transmission is encrypted using SSL/TLS protocols.</p>
+                <h4>4. Cookies</h4>
+                <p>We use essential cookies only for site functionality.</p>
+                <h4>5. Your Rights</h4>
+                <p>You have the right to request deletion of any stored data.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" data-modal-close="terms">&times;</span>
+            <div class="modal-body">
+                <h2>Terms of Service</h2>
+                <p><strong>Last Updated:</strong> 2023</p>
+                <h4>1. Acceptance of Terms</h4>
+                <p>By using this service, you agree to these Terms.</p>
+                <h4>2. Service Description</h4>
+                <p>This service provides AI-powered image transformation. Provided "as-is" without warranties.</p>
+                <h4>3. Acceptable Use</h4>
+                <p>You agree NOT to upload:</p>
+                <ul>
+                    <li>Illegal or unlawful content</li>
+                    <li>Explicit, pornographic, or obscene material</li>
+                    <li>Content depicting violence or harm</li>
+                    <li>Images you do not have rights to use</li>
+                </ul>
+                <h4>4. Intellectual Property</h4>
+                <p>You retain full ownership of your original images. Generated effects are royalty-free for personal and commercial use.</p>
+                <h4>5. Limitation of Liability</h4>
+                <p>We are not liable for any damages arising from the use of this service.</p>
+                <h4>6. Modifications</h4>
+                <p>We may update these terms at any time. Continued use constitutes acceptance.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
